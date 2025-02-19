@@ -5,7 +5,7 @@ from .models import Contact
 # Register your models here.
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    fields = ['name', 'email', 'subj', 'desc' ]
-    list_display = ['name', 'email', 'subj' ]
-    list_filter = ['name', 'email', 'subj' ]
-    search_fields = ['name', 'email', 'subj', 'desc' ]
+    fields = ['first_name', 'last_name', 'email', 'description' ]
+    list_display = ['first_name', 'last_name', 'email', 'description' ]
+    list_filter = ['first_name', 'last_name', 'email', 'description' ]
+    search_fields = ['first_name', 'last_name', 'email', 'description' ]
